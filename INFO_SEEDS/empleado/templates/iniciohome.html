@@ -1,0 +1,65 @@
+{% extends 'basehome.html' %}
+
+{% load static %}
+
+{% block title %} Pagina de inicio SERVIPAC{% endblock title %}
+
+
+{% block content %}
+
+{% include 'includes/headerhome.html' %}
+
+<!--Inicio de la imagen de portada-->
+
+<!--Fin de la imagen de portada-->
+
+<!--Bloque de bienvenida-->
+<div class="grid-x align-center">
+    <h2 class="cell large-8" style="font-size: 45px; text-align:center;">WELCOME!</h2>
+    <div class="cell large-8">
+        
+        <!--mensaje de bienvenida-->
+        <div class="callout success">  <!--cambio secondary por success(color que está en la docum)-->
+            <p>
+                At Info Seeds we collect reliable information given by NASA, analyze, process it and 
+                turn it into valuable information for agriculture. In this way you will be able to have 
+                answers to questions such as: "Can I plant here?", "How likely is drought in my area?", 
+                "Is it prone to pests?", "Does this type of soil benefit My objective?"
+ 
+            </p>
+            
+          </div>
+    </div>
+</div>
+<!--Fin de bloque de bienvenida-->
+<!--"{% static 'images/camion.jpg' %}"-->
+<!--"{% static 'css/style.css' %}" -->
+
+
+
+<link rel="stylesheet" href="{% static 'css/styleRg.css' %}">
+
+    <section class="contenido contenedor">
+        <div class="contenido_camion">
+            <!--<img class= "camion" src="{% static 'images/camion.jpg' %}" alt="camion">-->
+            <iframe width="560" height="510" src="https://www.youtube.com/embed/1_fzzSe9AoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="texto">
+            <h1 class="texto_titulo">Importance of Agriculture</h1>
+            <p> Agriculture usually plays a vital role in the economy. . Not just for the reason that
+                thanks to agriculture the population can feed itself, but also because thanks to
+                Agriculture is supported by a large part of the industries by indirect jobs and much more by a
+                country like Spain where the agricultural sector is the main base of their livelihood.
+                The use of technologies in agriculture largely determines the competitiveness of some
+                farmers versus others. The use of technology in agriculture ensures productivity and
+                It benefits the country as a whole for the indirect jobs it creates.</p>
+        </div>
+    </section>
+    
+
+
+{% include 'includes/footerhome.html' %}
+
+{% endblock content %}
+
+

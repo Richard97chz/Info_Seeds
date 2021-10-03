@@ -1,0 +1,73 @@
+{% extends 'basehome.html' %}
+
+{% block title %} Pagina de inicio SERVIPAC{% endblock title %}
+
+
+{% block content %}
+
+{% include 'includes/headerhome.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/equipo.css' %}" >
+    <title></title>
+</head>
+
+<body>
+    <div class="equipo">
+        <div class="texto">
+            <h1>Our Team</h1>
+            <p>Our Team is made up of students and professionals from Mexico and Peru who are experts on the subject.</p>
+        </div>
+        <div class="imagenes">
+            <div class="trabajadores">
+                <img src="{% static 'images/Richard Nope.png' %}" alt="">
+                <div class="descripcion">
+                    <h2>Richard Ñope</h2>
+                    <p>
+                        Programmer-researcher
+                    </p>
+                </div>
+            </div>
+            <div class="trabajadores">
+                <img src="{% static 'images/Ana Miriam.jpeg' %}" alt="">
+                <div class="descripcion">
+                    <h2>Ana Miriam</h2>
+                    <p>
+                        Programmer-researcher
+                    </p>
+                </div>
+            </div>
+            <div class="trabajadores">
+                <img src="{% static 'images/Julio Diaz.png' %}"  alt="">
+                <div class="descripcion">
+                    <h2>Julio Diaz</h2>
+                    <p>
+                        Artificial intelligence
+                    </p>
+                </div>
+            </div>
+            <div class="trabajadores">
+                <img src="{% static 'images/Maria Carmona.png' %}" alt="">
+                <div class="descripcion">
+                    <h2>Maria Carmona</h2>
+                    <p>
+                        Management-research
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+{% include 'includes/footerhome.html' %}
+
+{% endblock content %}

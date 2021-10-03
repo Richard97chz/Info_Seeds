@@ -1,0 +1,82 @@
+{% extends 'basehome.html' %}
+
+{% block title %} Pagina de inicio SERVIPAC{% endblock title %}
+
+
+{% block content %}
+
+{% include 'includes/headerhome.html' %}
+{% load static %}
+  
+
+
+  <link rel="stylesheet" href="{% static 'css/estilos2.css' %}" />
+ 
+    <div class="servicios">
+      <div class="servicios__items">
+        <div class="items">
+          <div class="items_img">
+            <img src="{% static 'images/Estudio_Terreno.jpg' %}"  alt="" />
+        
+          </div>
+          <div class="items_textos">
+            <h2>STUDY OF THE LAND FOR PLANTING</h2>
+            <p>
+              You will be able to know if the chosen land is suitable for sowing a certain plant
+            </p>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items_img">
+            <img src="{% static 'images/Metereologia.jpg' %}"  alt="" />
+          </div>
+          <div class="items_textos">
+            <h2>MEASUREMENT OF WEATHER VARIABLES</h2>
+            <p>
+              In this way you will be able to know the climate of the land where you have your plantations
+            </p>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items_img">
+            <img src="{% static 'images/Plagas.jpg' %}"  alt="" />
+             
+          </div>
+          <div class="items_textos">
+            <h2>PEST DETECTION</h2>
+            <p>
+              You will be able to detect the pests present in your plants, we only need you to specify the 
+              place where your crop is located
+            </p>
+          </div>
+        </div>
+        
+          
+        <div class="items">
+          <div class="items_img">
+            <img src="{% static 'images/Humedad.png' %}" alt="" />
+        
+          </div>
+          <div class="items_textos">
+            <h2>HUMIDITY OF FLOOR</h2>
+            <p>
+              You will be able to know the level of humidity of the soil in order to know the amount of water 
+              necessary for the irrigation of your crops
+            </p>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+
+
+
+
+<!--Inicio de la imagen de portada-->
+<!--eliminado-->
+<!--Fin de la imagen de portada-->
+
+{% include 'includes/footerhome.html' %}
+
+{% endblock content %}
